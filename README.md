@@ -1,5 +1,6 @@
 Translate a table by using the Translator API. See https://developer.chrome.com/docs/ai/translator-api and https://developer.mozilla.org/en-US/docs/Web/API/Translator_and_Language_Detector_APIs.
 
+
 # Usage
 
 First initiate an `TableCsvTranslation` instance with the id of the table:
