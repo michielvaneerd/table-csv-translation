@@ -4,7 +4,7 @@ Translate cells of a table to other cells by using the Translator API. See https
 
 First initiate an `TableCsvTranslation` instance with the `id` of the table:
 
-```
+```js
 const tableCsvTranslation = new TableCsvTranslation('my-table');
 ```
 
@@ -12,7 +12,7 @@ The table *must* have a `thead` with cells. Each cell should have a `data-name` 
 
 For example if the cell `question` should be translated to cell `question_translation`:
 
-````
+```html
 <table id="my-table">
     <thead>
         <tr>
@@ -39,11 +39,11 @@ For example if the cell `question` should be translated to cell `question_transl
         </tr>
     </tbody>
 </table>
-````
+```
 
 Now you can automatically translate all `question` cells to the `question_translation` cells:
 
-```
+```js
 await tableCsvTranslation.translate('en', 'nl', function(e) {
     console.log(e);
 });
@@ -58,6 +58,6 @@ The third parameter is a callback that will be called during the different phase
 
 To download the table to a CSV file:
 
-```
+```js
 tableCsvTranslation.download('table-nl.csv');
 ```
