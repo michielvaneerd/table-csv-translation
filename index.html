@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <p>
+        <select id="select-locale">
+            <option value="">Choose language...</option>
+            <option value="nl">Dutch</option>
+            <option value="de">German</option>
+            <option value="fr">French</option>
+            <option value="it">Italian</option>
+            <option value="es">Spanish</option>
+            <option value="pt">Portuguese</option>
+            <option value="zh-Hans">Chinese (Simple)</option>
+            <option value="zh-Hant">Chinese (Traditional)</option>
+            <option value="el">Greek</option>
+            <option value="ja">Japanese</option>
+            <option value="ar">Arabic</option>
+        </select>
+        <button id="csv-button">Download CSV</button>
+        <span id="status"></span>
+    </p>
+    <table id="my-table">
+        <thead>
+            <tr>
+                <th data-name="id">#ID</th>
+                <th data-name="question" data-target="question_translation">Question</th>
+                <th data-name="question_translation">Question translation</th>
+                <th data-name="info" data-target="info_translation">Info</th>
+                <th data-name="info_translation">Info translation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>What is your name?</td>
+                <td></td>
+                <td>This is optional</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>How much do you like going to the movies?</td>
+                <td></td>
+                <td>Go from 0 (I don't like it at all) to 10 (I like it very much)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>What's your favourite hobby?</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./table-csv-translation.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
